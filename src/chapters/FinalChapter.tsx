@@ -1,5 +1,6 @@
 import { RevealOnScroll } from '../components/ui/RevealOnScroll';
 import { PhotoCard } from '../components/ui/PhotoCard';
+import { asset } from '../utils/asset';
 
 export function FinalChapter() {
   return (
@@ -12,7 +13,7 @@ export function FinalChapter() {
         <RevealOnScroll duration={1.2}>
           <div className="mx-auto max-w-[280px] sm:max-w-[320px]">
             <PhotoCard
-              src="/images/hero/hero.png"
+              src={asset('/images/hero/hero.png')}
               caption="Jacqueline Veronica"
               aspectRatio="95/128"
               className="shadow-2xl shadow-violet-500/10"

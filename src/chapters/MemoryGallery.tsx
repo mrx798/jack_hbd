@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { RevealOnScroll } from '../components/ui/RevealOnScroll';
 import { MemoryVideo } from '../components/ui/MemoryVideo';
 import { ViewportLoopVideo } from '../components/ui/ViewportLoopVideo';
+import { asset } from '../utils/asset';
 
 // ─── Data-driven media list (exact order) ────────────────
 
@@ -28,18 +29,18 @@ type MemoryMedia =
 
 const galleryMedia: MemoryMedia[] = [
   // 01–06: Normal click-to-play videos with audio
-  { id: 'mem-01', type: 'video', src: '/videos/gallery/video1.mp4', behavior: 'click-to-play' },
-  { id: 'mem-02', type: 'video', src: '/videos/gallery/video2.mp4', behavior: 'click-to-play' },
-  { id: 'mem-03', type: 'video', src: '/videos/gallery/video3.mp4', behavior: 'click-to-play' },
-  { id: 'mem-04', type: 'video', src: '/videos/gallery/video4.mp4', behavior: 'click-to-play' },
-  { id: 'mem-05', type: 'video', src: '/videos/gallery/video5.mp4', behavior: 'click-to-play' },
-  { id: 'mem-06', type: 'video', src: '/videos/gallery/video6.mp4', behavior: 'click-to-play' },
+  { id: 'mem-01', type: 'video', src: asset('/videos/gallery/video1.mp4'), behavior: 'click-to-play' },
+  { id: 'mem-02', type: 'video', src: asset('/videos/gallery/video2.mp4'), behavior: 'click-to-play' },
+  { id: 'mem-03', type: 'video', src: asset('/videos/gallery/video3.mp4'), behavior: 'click-to-play' },
+  { id: 'mem-04', type: 'video', src: asset('/videos/gallery/video4.mp4'), behavior: 'click-to-play' },
+  { id: 'mem-05', type: 'video', src: asset('/videos/gallery/video5.mp4'), behavior: 'click-to-play' },
+  { id: 'mem-06', type: 'video', src: asset('/videos/gallery/video6.mp4'), behavior: 'click-to-play' },
   // 07: Special 3-second looping ambient video — muted, no controls
-  { id: 'mem-07', type: 'video', src: '/videos/gallery/loop.mp4', behavior: 'viewport-loop', muted: true },
+  { id: 'mem-07', type: 'video', src: asset('/videos/gallery/loop.mp4'), behavior: 'viewport-loop', muted: true },
   // 08–10: Regular photographs
-  { id: 'mem-08', type: 'image', src: '/images/gallery/_img.jpg' },
-  { id: 'mem-09', type: 'image', src: '/images/gallery/img_2.jpg' },
-  { id: 'mem-10', type: 'image', src: '/images/gallery/img_3.jpg' },
+  { id: 'mem-08', type: 'image', src: asset('/images/gallery/_img.jpg') },
+  { id: 'mem-09', type: 'image', src: asset('/images/gallery/img_2.jpg') },
+  { id: 'mem-10', type: 'image', src: asset('/images/gallery/img_3.jpg') },
 ];
 
 export function MemoryGallery() {

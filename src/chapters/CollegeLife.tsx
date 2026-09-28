@@ -1,5 +1,6 @@
 import { RevealOnScroll } from '../components/ui/RevealOnScroll';
 import { FriendPhotoCard } from '../components/ui/FriendPhotoCard';
+import { asset } from '../utils/asset';
 
 interface CollegeSection {
   title: string;
@@ -10,17 +11,17 @@ const collegeSections: CollegeSection[] = [
   {
     title: 'How It Started',
     images: [
-      { id: 'college-start-1', src: '/images/college/firstimg.png', orientation: 'square' },
-      { id: 'college-start-2', src: '/images/college/shaha.jpg',    orientation: 'horizontal' },
-      { id: 'college-start-3', src: '/images/college/jama.jpg',     orientation: 'vertical' },
+      { id: 'college-start-1', src: asset('/images/college/firstimg.png'), orientation: 'square' },
+      { id: 'college-start-2', src: asset('/images/college/shaha.jpg'),    orientation: 'horizontal' },
+      { id: 'college-start-3', src: asset('/images/college/jama.jpg'),     orientation: 'vertical' },
     ],
   },
   {
     title: "How It's Going",
     images: [
-      { id: 'college-now-1', src: '/images/college/gan.jpg',   orientation: 'vertical' },
-      { id: 'college-now-2', src: '/images/college/whole.png', orientation: 'horizontal' },
-      { id: 'college-now-3', src: '/images/college/song.jpg',  orientation: 'vertical' },
+      { id: 'college-now-1', src: asset('/images/college/gan.jpg'),   orientation: 'vertical' },
+      { id: 'college-now-2', src: asset('/images/college/whole.png'), orientation: 'horizontal' },
+      { id: 'college-now-3', src: asset('/images/college/song.jpg'),  orientation: 'vertical' },
     ],
   },
 ];

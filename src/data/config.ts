@@ -1,4 +1,5 @@
 import type { SiteConfig, ChapterInfo } from '../types';
+import { asset } from '../utils/asset';
 
 export const siteConfig: SiteConfig = {
   recipientName: 'Jacqueline Veronica',
@@ -7,8 +8,8 @@ export const siteConfig: SiteConfig = {
   birthdayDate: '2026-09-28',
   authorName: 'Chaos Partner',
   authorRelationship: 'Best Friend',
-  musicFile: '/audio/The-Metro-Proposal.mp3',
-  ogImage: '/images/og-preview.jpg',
+  musicFile: asset('/audio/The-Metro-Proposal.mp3'),
+  ogImage: asset('/images/og-preview.jpg'),
 };
 
 export const chapters: ChapterInfo[] = [

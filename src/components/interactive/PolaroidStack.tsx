@@ -1,19 +1,20 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence, type PanInfo } from 'framer-motion';
+import { asset } from '../../utils/asset';
 
 // ─── Data: Exact photo order (FINAL — do not reorder) ─────────────
 const moments = [
-  { id: 'moment-01', src: '/images/moments/img_1.jpg' },
-  { id: 'moment-02', src: '/images/moments/img_2.jpg' },
-  { id: 'moment-03', src: '/images/moments/img_3.jpg' },
-  { id: 'moment-04', src: '/images/moments/img_4.png' },
-  { id: 'moment-05', src: '/images/moments/img_5.jpg' },
-  { id: 'moment-06', src: '/images/moments/img_6.jpg' },
-  { id: 'moment-07', src: '/images/moments/img_7.jpg' },
-  { id: 'moment-08', src: '/images/moments/img_8.jpg' },
-  { id: 'moment-09', src: '/images/moments/img_9.png' },
-  { id: 'moment-10', src: '/images/moments/img_10.png' },
-  { id: 'moment-11', src: '/images/moments/img_11.jpg' },
+  { id: 'moment-01', src: asset('/images/moments/img_1.jpg') },
+  { id: 'moment-02', src: asset('/images/moments/img_2.jpg') },
+  { id: 'moment-03', src: asset('/images/moments/img_3.jpg') },
+  { id: 'moment-04', src: asset('/images/moments/img_4.png') },
+  { id: 'moment-05', src: asset('/images/moments/img_5.jpg') },
+  { id: 'moment-06', src: asset('/images/moments/img_6.jpg') },
+  { id: 'moment-07', src: asset('/images/moments/img_7.jpg') },
+  { id: 'moment-08', src: asset('/images/moments/img_8.jpg') },
+  { id: 'moment-09', src: asset('/images/moments/img_9.png') },
+  { id: 'moment-10', src: asset('/images/moments/img_10.png') },
+  { id: 'moment-11', src: asset('/images/moments/img_11.jpg') },
 ] as const;
 
 const TOTAL = moments.length; // 11

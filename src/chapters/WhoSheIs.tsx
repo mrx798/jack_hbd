@@ -1,5 +1,6 @@
 import { RevealOnScroll } from '../components/ui/RevealOnScroll';
 import { PhotoCard } from '../components/ui/PhotoCard';
+import { asset } from '../utils/asset';
 
 export function WhoSheIs() {
   return (
@@ -20,7 +21,7 @@ export function WhoSheIs() {
         <div className="mt-12 grid gap-8 sm:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] sm:items-start">
           <RevealOnScroll delay={0.3} direction="left">
             <PhotoCard
-              src="/images/cover_pic.png"
+              src={asset('/images/cover_pic.png')}
               caption="Jacqueline Veronica"
               aspectRatio="3/4"
               className="mx-auto max-w-[340px] sm:mt-2"

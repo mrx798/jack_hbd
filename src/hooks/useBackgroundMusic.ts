@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useRef, useSyncExternalStore } from 'react';
+import { asset } from '../utils/asset';
 
 // ─── Configuration ───────────────────────────────────────
 const BACKGROUND_MUSIC_VOLUME = 0.35;
 const FADE_IN_DURATION_MS = 1200;
-const AUDIO_SRC = '/audio/The-Metro-Proposal.mp3';
+const AUDIO_SRC = asset('/audio/The-Metro-Proposal.mp3');
 
 // ─── Singleton Audio State ───────────────────────────────
 // This lives outside React to survive all re-renders and StrictMode double-mounts.
