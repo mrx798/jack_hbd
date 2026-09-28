@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ─── Custom Theme Tokens ──────────────────────────── */
+@theme {
+  --color-midnight: hsl(270, 30%, 6%);
+  --color-deep-purple: hsl(268, 40%, 12%);
+  --color-violet: hsl(270, 60%, 45%);
+  --color-rose-gold: hsl(340, 50%, 65%);
+  --color-champagne: hsl(38, 60%, 80%);
+  --color-soft-white: hsl(270, 10%, 92%);
+  --color-ghost: hsl(270, 15%, 60%);
+
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-garamond: 'Cormorant Garamond', serif;
+}
+
+/* ─── Base Styles ──────────────────────────────────── */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-midnight);
+  color: var(--color-soft-white);
+  overflow-x: hidden;
+}
+
+/* ─── Typography Utilities ─────────────────────────── */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-garamond {
+  font-family: var(--font-garamond);
+}
+
+/* ─── Gradient Text ────────────────────────────────── */
+.text-gradient-primary {
+  background: linear-gradient(135deg, var(--color-rose-gold), var(--color-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Custom Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(270, 30%, 20%);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(270, 40%, 30%);
+}
+
+/* ─── Selection ────────────────────────────────────── */
+::selection {
+  background: hsl(270, 60%, 45%, 0.3);
+  color: white;
+}
+
+/* ─── Reduced Motion ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ─── Safe Area (iPhone Notch) ─────────────────────── */
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* ─── Canvas Fix ───────────────────────────────────── */
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+/* ─── Apple Emoji Styling ──────────────────────────── */
+img.apple-emoji {
+  height: 1.1em;
+  width: 1.1em;
+  margin: 0 0.15em;
+  vertical-align: -0.15em;
+  display: inline-block;
+  object-fit: contain;
+  pointer-events: none;
+}
+

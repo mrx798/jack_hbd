@@ -1,0 +1,25 @@
+import type { TwentyOneItem } from '../types';
+
+export const twentyOneThings: TwentyOneItem[] = [
+  { id: 1, text: 'You have a heart that makes people feel safe — even when you forget to feel safe yourself.' },
+  { id: 2, text: 'The way you chose nursing — chose to be the person who shows up at the hardest moments of someone\'s life — says everything about who you are.' },
+  { id: 3, text: 'The long hospital hours, the late-night studying, the exhaustion you push through — it\'s not just a degree. It\'s who you\'re becoming. And who you\'re becoming is extraordinary.' },
+  { id: 4, text: 'Don\'t turn your kindness into self-neglect' },
+  { id: 5, text: 'Some prayers will be answered differently than you expected. Keep trusting anyway.' },
+  { id: 6, text: 'Keep the little girl inside you alive.' },
+  { id: 7, text: 'And when you fail, I\'ll still be there' },
+  { id: 8, text: 'Don\'t reply "I\'m fine" when you\'re obviously not fine.' },
+  { id: 9, text: 'Eat before you say "I\'m not hungry." Your stomach deserves a degree too.' },
+  { id: 10, text: 'If someone(probably website creator) offers food, don\'t ask questions. Eat.' },
+  { id: 11, text: 'I\'ll always be one of the people you can call.' },
+  { id: 12, text: 'I\'ll probably know when something is wrong before you tell me.' },
+  { id: 13, text: 'Home is wherever Amma asks, "Did you eat?"' },
+  { id: 14, text: 'Your family is your home, even when you\'re far from home' },
+  { id: 15, text: 'Keep photographs. Keep letters. Keep ordinary memories. They become priceless faster than you think' },
+  { id: 16, text: 'Don\'t be ashamed of how deeply you love' },
+  { id: 17, text: 'Don\'t forget to be childish sometimes.' },
+  { id: 18, text: 'We can turn the most normal conversation into absolute nonsense.' },
+  { id: 19, text: 'I\'ll always make fun of you, Because unfortunately, caring about you has given me unlimited teasing rights.' },
+  { id: 20, text: 'If we\'re both quiet, something is probably wrong.' },
+  { id: 21, text: 'Twenty-one looks incredible on you, Jack. And I\'m not just talking about the number.' },
+];
